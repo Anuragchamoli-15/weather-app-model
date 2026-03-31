@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left:15px ;
-    background-image: url(/pictures/green-field-with-sunny-day.jpg);
+    background-image: url(green-field-with-sunny-day.jpg);
     background-size: cover;
     background-position: center ;
     background-repeat: no-repeat;
