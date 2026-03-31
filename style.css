@@ -1,0 +1,146 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body */
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left:15px ;
+    background-image: url(/pictures/green-field-with-sunny-day.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    
+    /* align-items: center; */
+    
+}
+
+/* header */
+.header {
+    margin-top: 20px;
+}
+
+.header input {
+    padding: 10px;
+    width: 320px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-left: 40px;
+    margin-top: 20px;
+    
+}
+
+.header button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #333;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* main card */
+.todayTem {
+    background: white;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* sunInfo */
+.sunInfo{
+    margin-left: 110px;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+/* temp + city + condition*/
+.tem{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 100px
+}
+
+.tem p{
+    gap: 5px;
+}
+h1 {
+    font-size: 68px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000000;
+    margin-left: 100px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+#con{
+    font-size: 18px;
+    margin-left: 110px;
+}
+
+/* feelTem */
+#feelTem {
+   margin-left: 7px;
+   margin-top: 50px;
+    font-size: 20px;
+}
+
+
+/* bottom info in single line */
+.bottom-info {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    gap: 100px;
+}
+
+
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 600px) {
+     
+    body{
+        /* width: 100vw; */
+        height: 100vh;
+       background-image: url(/pictures/green-field-with-sunny-day.jpg);
+    background-size: auto;
+    background-position: 0cqmin;
+    background-repeat: no-repeat;
+    
+        
+    }
+
+    /* temp + feels like center */
+    .top-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* rest in one line below */
+    .bottom-info {
+        /* flex-direction: column; */
+        width: 100vw;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
